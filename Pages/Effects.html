@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects of Flooding | Current 4</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="effect.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top">
+
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="brand" href="../index.html">
+                <img src="../Images/current4-logo.png" alt="Current 4 logo">
+                <span>Current 4</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="desktop-menu">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link ">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="About us.html" class="nav-link ">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Safety_Tips.html" class="nav-link ">Safety Tips</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Before&During.html" class="nav-link">Before & During</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Solution.html" class="nav-link">UD Tunnel</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+
+                            <li>
+                                <a class="dropdown-item nav-link" href="History.html">
+                                    History
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link active" href="Effects.html">
+                                    Effects of Flooding
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link" href="Signin.html">
+                                    Sign In
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Mobile Offcanvas Button -->
+            <button class="btn mobile-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-label="Open navigation menu">
+                <i class="bi bi-list" style="font-size: 28px; color: #176b91;"></i>
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+
+        <!-- Sidebar Header -->
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title" id="mobileMenuLabel">
+                <img src="../Images/current4-logo.png" width="35" alt="Logo">
+                Current 4
+            </h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+        </div>
+
+        <!-- Sidebar Links -->
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link ">
+                        <i class="bi bi-house-door me-2"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About us.html" class="nav-link active">
+                        <i class="bi bi-people me-2"></i> About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Safety_Tips.html" class="nav-link">
+                        <i class="bi bi-shield-check me-2"></i> Safety Tips
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Before&During.html" class="nav-link">
+                        <i class="bi bi-cloud-rain me-2"></i> Before & During
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Solution.html" class="nav-link">
+                        <i class="bi bi-water me-2"></i> UD Tunnel
+                    </a>
+                </li>
+
+                <hr>
+
+                <li class="nav-item">
+                    <a href="History.html" class="nav-link">
+                        <i class="bi bi-clock-history me-2"></i> History
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Effects.html" class="nav-link active">
+                        <i class="bi bi-question-circle me-2"></i> Effects of Flooding
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Signin.html" class="nav-link">
+                        <i class="bi bi-person me-2"></i> Sign In
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- HERO SECTION -->
+    <section class="hero ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+
+                    <p class="text-uppercase fw-bold mb-2">
+                        Understanding the Impact
+                    </p>
+
+                    <h1>The Effects of Flooding</h1>
+
+                    <p class="mt-3">
+                        Flooding is more than just rising water. It can affect
+                        people's lives, damage infrastructure, destroy natural
+                        environments, and interrupt entire communities.
+                        Understanding these effects is an important step
+                        towards building a safer future.
+                    </p>
+
+                    <a href="#effects" class="hero-btn mt-3">
+                        Explore the Effects
+                        <i class="bi bi-arrow-down"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="py-5">
+        <div class="container py-3">
+
+            <div class="text-center mb-5">
+                <h2 class="section-title">How Does Flooding Affect Us?</h2>
+
+                <p class="section-subtitle">
+                    Floods can cause immediate damage and create long-term
+                    challenges for individuals, families, communities,
+                    and the environment.
+                </p>
+            </div>
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-6">
+                    <h3 class="fw-bold text-dark">More Than Just Water Damage</h3>
+
+                    <p class="text-secondary mt-3" style="line-height: 1.9;">
+                        When heavy rainfall causes rivers to overflow or drainage
+                        systems become overwhelmed, water can spread into
+                        residential areas, roads, schools, and farmland.
+                    </p>
+
+                    <p class="text-secondary" style="line-height: 1.9;">
+                        The consequences can continue even after floodwater
+                        disappears. Families may need to repair their homes,
+                        businesses may lose income, and communities may face
+                        difficulties accessing clean water and essential services.
+                    </p>
+
+                    <a href="#effects" class="read-btn">
+                        Discover the main effects
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="highlight-section">
+                        <div class="row g-4">
+
+                            <div class="col-6">
+                                <i class="bi bi-house-damage highlight-icon"></i>
+                                <h5 class="fw-bold mt-3">Property Damage</h5>
+                                <p class="text-secondary small">
+                                    Homes and buildings can be damaged.
+                                </p>
+                            </div>
+
+                            <div class="col-6">
+                                <i class="bi bi-heart-pulse highlight-icon"></i>
+                                <h5 class="fw-bold mt-3">Health Risks</h5>
+                                <p class="text-secondary small">
+                                    Floodwater can create health hazards.
+                                </p>
+                            </div>
+
+                            <div class="col-6">
+                                <i class="bi bi-cash-stack highlight-icon"></i>
+                                <h5 class="fw-bold mt-3">Economic Loss</h5>
+                                <p class="text-secondary small">
+                                    Businesses and livelihoods can suffer.
+                                </p>
+                            </div>
+
+                            <div class="col-6">
+                                <i class="bi bi-tree highlight-icon"></i>
+                                <h5 class="fw-bold mt-3">Environmental Damage</h5>
+                                <p class="text-secondary small">
+                                    Soil, water, and habitats can be affected.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MAIN EFFECTS -->
+    <section class="py-5" id="effects">
+        <div class="container py-3">
+
+            <div class="text-center mb-5">
+                <h2 class="section-title">Four Major Effects of Flooding</h2>
+
+                <p class="section-subtitle">
+                    Explore the different ways flooding can affect people
+                    and the world around them.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Social Effects -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card effect-card p-4">
+
+                        <div class="effect-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+
+                        <h4>Social Effects</h4>
+
+                        <p>
+                            Flooding can disrupt daily life, displace families,
+                            and interrupt education and community activities.
+                        </p>
+
+                        <a href="#" class="read-btn mt-auto" data-bs-toggle="modal" data-bs-target="#socialModal">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Economic Effects -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card effect-card p-4">
+
+                        <div class="effect-icon">
+                            <i class="bi bi-currency-dollar"></i>
+                        </div>
+
+                        <h4>Economic Effects</h4>
+
+                        <p>
+                            Floods can damage businesses, destroy crops,
+                            and create expensive recovery and repair costs.
+                        </p>
+
+                        <a href="#" class="read-btn mt-auto" data-bs-toggle="modal" data-bs-target="#economicModal">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Environmental Effects -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card effect-card p-4">
+
+                        <div class="effect-icon">
+                            <i class="bi bi-tree"></i>
+                        </div>
+
+                        <h4>Environmental Effects</h4>
+
+                        <p>
+                            Floodwater can cause soil erosion, contaminate
+                            water sources, and damage natural habitats.
+                        </p>
+
+                        <a href="#" class="read-btn mt-auto" data-bs-toggle="modal" data-bs-target="#environmentModal">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Infrastructure Effects -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card effect-card p-4">
+
+                        <div class="effect-icon">
+                            <i class="bi bi-buildings"></i>
+                        </div>
+
+                        <h4>Infrastructure Effects</h4>
+
+                        <p>
+                            Roads, bridges, houses, electricity systems,
+                            and drainage networks can be damaged.
+                        </p>
+
+                        <a href="#" class="read-btn mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#infrastructureModal">
+                            Learn More <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SOCIAL EFFECT MODAL -->
+    <div class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="socialModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="socialModalLabel">
+                        <i class="bi bi-people me-2"></i>
+                        Social Effects of Flooding
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="text-center">
+                        <i class="bi bi-people modal-effect-icon"></i>
+                        <h4 class="fw-bold">Impact on People's Lives</h4>
+                    </div>
+
+                    <p>
+                        Flooding can affect families and communities in several ways.
+                        People may be forced to leave their homes and move to safer
+                        locations. Schools, workplaces, and public services may
+                        temporarily stop operating.
+                    </p>
+
+                    <h6 class="fw-bold text-primary">Major consequences:</h6>
+
+                    <ul>
+                        <li>Families may lose access to their homes and belongings.</li>
+                        <li>Students may be unable to attend school.</li>
+                        <li>Communities may become separated by flooded roads.</li>
+                        <li>People may experience stress and emotional difficulties.</li>
+                        <li>Access to clean drinking water and healthcare may be limited.</li>
+                    </ul>
+
+                    <div class="alert alert-info mb-0">
+                        <strong>Remember:</strong> Protecting human lives should
+                        always be the first priority during a flood.
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="modal-close-btn" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ECONOMIC EFFECT MODAL -->
+    <div class="modal fade" id="economicModal" tabindex="-1" aria-labelledby="economicModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="economicModalLabel">
+                        <i class="bi bi-currency-dollar me-2"></i>
+                        Economic Effects of Flooding
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="text-center">
+                        <i class="bi bi-cash-stack modal-effect-icon"></i>
+                        <h4 class="fw-bold">Financial Losses</h4>
+                    </div>
+
+                    <p>
+                        Flooding can create serious financial problems for
+                        individuals, businesses, and local communities.
+                        Damaged buildings, roads, equipment, and farmland
+                        may require expensive repairs.
+                    </p>
+
+                    <h6 class="fw-bold text-primary">Major consequences:</h6>
+
+                    <ul>
+                        <li>Damage to shops, homes, and business equipment.</li>
+                        <li>Loss of crops and agricultural income.</li>
+                        <li>Temporary closure of local businesses.</li>
+                        <li>Increased costs for repairing infrastructure.</li>
+                        <li>Loss of income for workers and farmers.</li>
+                    </ul>
+
+                    <div class="alert alert-info mb-0">
+                        <strong>Remember:</strong> Flood preparedness can help
+                        communities reduce potential financial losses.
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="modal-close-btn" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ENVIRONMENTAL EFFECT MODAL -->
+    <div class="modal fade" id="environmentModal" tabindex="-1" aria-labelledby="environmentModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="environmentModalLabel">
+                        <i class="bi bi-tree me-2"></i>
+                        Environmental Effects of Flooding
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="text-center">
+                        <i class="bi bi-tree modal-effect-icon"></i>
+                        <h4 class="fw-bold">Damage to Nature</h4>
+                    </div>
+
+                    <p>
+                        Floodwater can change natural environments.
+                        Fast-moving water may remove soil, damage vegetation,
+                        and carry waste or pollutants into rivers and other
+                        water sources.
+                    </p>
+
+                    <h6 class="fw-bold text-primary">Major consequences:</h6>
+
+                    <ul>
+                        <li>Soil erosion along riverbanks.</li>
+                        <li>Contamination of rivers and drinking water sources.</li>
+                        <li>Damage to plants and natural habitats.</li>
+                        <li>Movement of waste and pollutants into the environment.</li>
+                        <li>Changes to local ecosystems.</li>
+                    </ul>
+
+                    <div class="alert alert-info mb-0">
+                        <strong>Remember:</strong> Protecting rivers and
+                        maintaining proper drainage can support a healthier
+                        environment.
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="modal-close-btn" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- INFRASTRUCTURE EFFECT MODAL -->
+    <div class="modal fade" id="infrastructureModal" tabindex="-1" aria-labelledby="infrastructureModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infrastructureModalLabel">
+                        <i class="bi bi-buildings me-2"></i>
+                        Infrastructure Effects of Flooding
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="text-center">
+                        <i class="bi bi-buildings modal-effect-icon"></i>
+                        <h4 class="fw-bold">Damage to Essential Facilities</h4>
+                    </div>
+
+                    <p>
+                        Floodwater can damage essential infrastructure
+                        that communities depend on every day. This can make
+                        transportation, communication, and access to basic
+                        services more difficult.
+                    </p>
+
+                    <h6 class="fw-bold text-primary">Major consequences:</h6>
+
+                    <ul>
+                        <li>Damage to roads and bridges.</li>
+                        <li>Flooded houses and public buildings.</li>
+                        <li>Disruption to electricity and communication systems.</li>
+                        <li>Blocked drainage systems.</li>
+                        <li>Difficulty accessing hospitals and emergency services.</li>
+                    </ul>
+
+                    <div class="alert alert-info mb-0">
+                        <strong>Remember:</strong> Strong infrastructure and
+                        effective drainage systems can improve flood resilience.
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="modal-close-btn" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TAUNGOO SECTION -->
+    <section class="py-5">
+        <div class="container py-3">
+
+            <div class="taungoo-section">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-lg-7">
+
+                        <span class="badge rounded-pill text-bg-info mb-3">
+                            LOCAL PERSPECTIVE
+                        </span>
+
+                        <h2 class="section-title">
+                            How Can Flooding Affect Taungoo?
+                        </h2>
+
+                        <p class="text-secondary mt-3" style="line-height: 1.9;">
+                            Taungoo experiences seasonal heavy rainfall and
+                            flooding risks associated with rising rivers.
+                            When water levels increase, riverside communities
+                            and low-lying areas can face serious challenges.
+                        </p>
+
+                        <p class="text-secondary" style="line-height: 1.9;">
+                            Flooding may affect houses, roads, farmland,
+                            local businesses, and access to essential services.
+                            Understanding these local impacts helps communities
+                            prepare and respond more effectively.
+                        </p>
+
+                        <a href="History.html" class="read-btn">
+                            Explore Taungoo's Flood History
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <div class="bg-info-subtle rounded-4 p-4">
+
+                            <h5 class="fw-bold text-primary mb-3">
+                                Possible Local Impacts
+                            </h5>
+
+                            <p>
+                                <i class="bi bi-house-door-fill text-primary me-2"></i>
+                                Damage to riverside homes
+                            </p>
+
+                            <p>
+                                <i class="bi bi-signpost-2-fill text-primary me-2"></i>
+                                Disrupted transportation
+                            </p>
+
+                            <p>
+                                <i class="bi bi-flower1 text-primary me-2"></i>
+                                Agricultural losses
+                            </p>
+
+                            <p>
+                                <i class="bi bi-droplet-half text-primary me-2"></i>
+                                Contaminated water sources
+                            </p>
+
+                            <p class="mb-0">
+                                <i class="bi bi-people-fill text-primary me-2"></i>
+                                Displacement of families
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <!-- Logo and group name -->
+                <div class="col-12 col-md-5">
+                    <div class="footer-brand">
+                        <div class="brand-heading">
+                            <img src="../images/current4-logo.png" alt="Current 4 Logo" class="footer-logo">
+
+                            <h3>Current <span>4</span></h3>
+                        </div>
+
+                        <p class="footer-slogan">
+                            Awareness today, a safer tomorrow.
+                        </p>
+                        <p class="footer-description">
+                            Working towards a safer, flood-resilient Taungoo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social media icons -->
+                <div class="col-12 col-md-4">
+                    <div class="footer-social">
+                        <h5>Connect With Us</h5>
+
+                        <div class="social-icons">
+
+                            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+
+                            <a href="https://www.tiktok.com/" aria-label="TikTok" target="_blank">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+
+                        </div>
+
+                        <p class="social-caption">
+                            Follow our journey and spread awareness.
+                        </p>
+                    </div>
+                </div>
+                <!-- Quick links -->
+                <div class="col-12 col-md-3">
+                    <div class="footer-links">
+                        <h5>Explore</h5>
+                        <a href="../index.html">Home</a>
+                        <a href="About us.html">About Us</a>
+                        <a href="Safety_Tips.html">Safety Tips</a>
+                        <a href="Before&During.html">Before & During</a>
+                        <a href="Solution.html">UD Tunnel</a>
+                        <a href="History.html">History</a>
+                        <a href="Effects.html">Effects Of flooding</a>
+                        <a href="Signin.html">Sign In</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>© 2026 Copyright Current 4. All rights reserved.</p>
+            </div>
+        </div>
+
+
+
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current 4 | UD Tunnel </title>
+
+    <link rel="icon" type="image/x-icon" href="../Images/Current 4 logo with bg .png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Current 4 custom CSS (load after Bootstrap) -->
+    <link rel="stylesheet" href="solution.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../Images/Current 4 logo with bg .png">
+
+    <!-- AOS CSS and JavaScript -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top">
+
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="brand" href="../index.html">
+                <img src="../Images/current4-logo.png" alt="Current 4 logo">
+                <span>Current 4</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="desktop-menu">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link ">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="About us.html" class="nav-link">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Safety_Tips.html" class="nav-link">Safety Tips</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Before&During.html" class="nav-link">Before & During</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Solution.html" class="nav-link active">UD Tunnel</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+
+                            <li>
+                                <a class="dropdown-item nav-link" href="History.html">
+                                    History
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link" href="Effects.html">
+                                    Effects of Flooding
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link" href="Signin.html">
+                                    Sign In
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Mobile Offcanvas Button -->
+            <button class="btn mobile-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-label="Open navigation menu">
+                <i class="bi bi-list" style="font-size: 28px; color: #176b91;"></i>
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+
+        <!-- Sidebar Header -->
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title" id="mobileMenuLabel">
+                <img src="./Images/current4-logo.png" width="35" alt="Logo">
+                Current 4
+            </h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+        </div>
+
+        <!-- Sidebar Links -->
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link ">
+                        <i class="bi bi-house-door me-2"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About us.html" class="nav-link ">
+                        <i class="bi bi-people me-2"></i> About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Safety_Tips.html" class="nav-link">
+                        <i class="bi bi-shield-check me-2"></i> Safety Tips
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Before&During.html" class="nav-link">
+                        <i class="bi bi-cloud-rain me-2"></i> Before & During
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Solution.html" class="nav-link active">
+                        <i class="bi bi-water me-2"></i> UD Tunnel
+                    </a>
+                </li>
+
+                <hr>
+
+                <li class="nav-item">
+                    <a href="History.html" class="nav-link">
+                        <i class="bi bi-clock-history me-2"></i> History
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Effects.html" class="nav-link">
+                        <i class="bi bi-question-circle me-2"></i> Effects of Flooding
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Signin.html" class="nav-link">
+                        <i class="bi bi-person me-2"></i> Sign In
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <!-- End of Navigation  -->
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <span class="badge bg-info mb-3">OUR PROPOSED SOLUTION</span>
+            <h1>A Smarter Way to<br>Prepare for Floods.</h1>
+            <p class="lead mt-3">
+                Exploring underground discharge tunnels as an
+                additional solution to manage excess rainwater
+                and reduce flood risks in Taungoo.
+            </p>
+            <a href="#introduction" class="btn btn-light mt-3">
+                Explore Our Solution
+            </a>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="content-section" id="introduction">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">The Underground Discharge Tunnel</h2>
+                <p>Discover how underground drainage can help manage floodwater.</p>
+            </div>
+
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img class="info-img" src="https://web-japan.org/trends/11_tech-life/images/tecd130312.jpg"
+                        alt="Engineering and construction work">
+                </div>
+
+                <div class="col-md-6 info-text">
+                    <h3>What Is an Underground Discharge Tunnel?</h3>
+                    <p>
+                        An underground discharge tunnel is a large
+                        passage built beneath the ground to transport
+                        excess rainwater from one location to another.
+                    </p>
+                    <p>
+                        It provides an additional drainage route when
+                        heavy rainfall produces more water than
+                        existing drainage systems can handle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="content-section blue-bg">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <div class="col-md-6 order-md-2">
+                    <img class="info-img"
+                        src="https://www.tokyoupdates.metro.tokyo.lg.jp/en/assets_c/2024/08/_74A7356-thumb-1600xauto-10134.jpg"
+                        alt="Underground infrastructure construction">
+                </div>
+
+                <div class="col-md-6 order-md-1 info-text">
+                    <h3>How Does It Work?</h3>
+                    <p>
+                        Rainwater enters through surface drains and
+                        underground inlet structures. It then flows
+                        through the tunnel towards a suitable outlet.
+                    </p>
+                    <p>
+                        The system can use gravity or pumping equipment
+                        to move water, depending on the ground level
+                        and river conditions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CROSS SECTION -->
+    <section class="content-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title">Inside the Tunnel System</h2>
+                <p>A simplified explanation of how water travels underground.</p>
+            </div>
+
+            <div class="diagram">
+                <div class="row align-items-center g-3">
+                    <div class="col-md-4">
+                        <h5 class="text-primary">01. Water Collection</h5>
+                        <img class="info-img" style="height:180px"
+                            src="https://www.sariverauthority.org/wp-content/uploads/2020/10/sa_river_tunnel_outlet.jpg"
+                            alt="Heavy rainfall">
+                        <p class="mt-3">Rainwater enters through drainage inlets.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="text-primary">02. Water Transportation</h5>
+                        <div class="tunnel">WATER FLOW →</div>
+                        <p>Water moves through the underground tunnel.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="text-primary">03. Water Discharge</h5>
+                        <img class="info-img" style="height:180px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-7bsip_l_BK_BEYXEhWYlwH3j_HerdOwKFCwRQYT6pKjM-iGYselXlyw&s=10"
+                            alt="River water">
+                        <p class="mt-3">Water reaches a suitable discharge location.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TUNNEL DESIGN -->
+    <section class="content-section blue-bg">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Tunnel Design and Structure</h2>
+                <p>Our proposed cylindrical underground tunnel.</p>
+            </div>
+
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img class="info-img"
+                        src="https://www.rhomberg-sersa.com/uploads/media/1920x930/02/1952-IMG_0667.jpg?v=1-0"
+                        alt="Concrete infrastructure">
+                </div>
+
+                <div class="col-md-6 info-text">
+                    <h3>Cylindrical Tunnel Design</h3>
+                    <p>
+                        Our proposed tunnel has a cylindrical shape
+                        with a circular cross-section. This shape
+                        distributes surrounding ground pressure
+                        effectively when properly engineered.
+                    </p>
+                    <p>
+                        Reinforced concrete lining helps provide
+                        structural strength and protects the tunnel
+                        from surrounding soil and groundwater.
+                    </p>
+                </div>
+            </div>
+
+            <!-- DIMENSIONS -->
+            <div class="info-card mt-5">
+                <h4 class="section-title">Proposed Tunnel Dimensions</h4>
+                <p>Illustrative calculation example:</p>
+
+                <div class="row text-center g-3 mt-2">
+                    <div class="col-6 col-md-3">
+                        <h3 class="text-primary">4 m</h3>
+                        <p>Diameter</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h3 class="text-primary">1 km</h3>
+                        <p>Length</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h3 class="text-primary">12.57 m²</h3>
+                        <p>Cross-sectional Area</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h3 class="text-primary">12,566 m³</h3>
+                        <p>Internal Volume</p>
+                    </div>
+                </div>
+
+                <hr>
+                <h5>Volume Calculation</h5>
+                <p>V = π × r² × L</p>
+                <p>V = 3.1416 × 2² × 1,000</p>
+                <p><strong>V ≈ 12,566 m³</strong></p>
+                <p>
+                    Approximately 3.32 million US gallons
+                    when completely full.
+                </p>
+            </div>
+
+            <!-- SUPPORT STRUCTURE -->
+            <div class="row align-items-center g-4 mt-4">
+                <div class="col-md-6 order-md-2">
+                    <img class="info-img"
+                        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+                        alt="Construction workers at a site">
+                </div>
+
+                <div class="col-md-6 order-md-1 info-text">
+                    <h3>Structural Support</h3>
+                    <p>
+                        The tunnel requires reinforced concrete lining
+                        and suitable ground support to withstand
+                        surrounding soil and water pressure.
+                    </p>
+                    <p>
+                        Internal pillars are generally avoided because
+                        they obstruct water flow. Additional beams
+                        may support access shafts and other structures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="content-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">How Can It Reduce Flood Risk?</h2>
+                <p>Potential benefits for communities in Taungoo.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h5>01. Faster Water Transportation</h5>
+                        <p>
+                            Helps move excess rainwater away from
+                            flood-prone areas through an additional
+                            underground drainage route.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h5>02. Less Surface Water</h5>
+                        <p>
+                            Reduces water accumulation on roads and
+                            nearby land when sufficient drainage
+                            capacity is available.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h5>03. Improved Urban Drainage</h5>
+                        <p>
+                            Provides another pathway for managing
+                            stormwater during periods of heavy rainfall.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h5>04. Reduced Drainage Pressure</h5>
+                        <p>
+                            Could reduce the amount of water entering
+                            existing drainage channels and help
+                            prevent overloading.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CHALLENGES -->
+    <section class="content-section blue-bg">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Challenges and Limitations</h2>
+                <p>Important factors that must be considered.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h5>High Construction Costs</h5>
+                        <p>
+                            Tunnels require expensive materials,
+                            machinery and skilled workers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h5>Soil Stability and Groundwater</h5>
+                        <p>
+                            Weak soil and groundwater pressure can
+                            make underground construction difficult.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h5>Maintenance</h5>
+                        <p>
+                            Sediment and rubbish can accumulate
+                            inside the tunnel and reduce its capacity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h5>Environmental Impact</h5>
+                        <p>
+                            Construction and water discharge could
+                            affect surrounding land and ecosystems.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <h5>Discharge Location</h5>
+                        <p>
+                            A suitable outlet must be selected to
+                            avoid increasing flood risks downstream.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert  -->
+
+  <!-- EXPERT OPINION SECTION -->
+<section class="expert-section py-5">
+    <div class="container py-4">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+            <span class="expert-label">04 / PROFESSIONAL REVIEW</span>
+            <h2 class="expert-heading mt-3">What Does the Expert Say?</h2>
+            <p class="expert-subheading mx-auto mt-3">
+                An external perspective on the potential of our
+                underground discharge tunnel proposal.
+            </p>
+        </div>
+
+        <!-- Main Expert Card -->
+        <div class="row g-0 expert-container overflow-hidden">
+
+            <!-- LEFT: EXPERT OPINION -->
+            <div class="col-lg-7 expert-left p-4 p-md-5">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="expert-number">01</span>
+                    <span class="expert-tag">EXPERT PERSPECTIVE</span>
+                </div>
+
+                <div class="quote-mark">“</div>
+
+                <h3 class="expert-title">
+                    A promising approach to
+                    <span>flood management.</span>
+                </h3>
+
+                <p class="expert-quote mt-4">
+                    An underground discharge tunnel could be an effective
+                    approach to reducing urban flooding in Taungoo by
+                    directing excess rainwater away from flood-prone areas.
+                    However, its success would depend on proper design,
+                    sufficient water capacity, suitable construction
+                    locations, and regular maintenance. I believe this
+                    is a promising solution that could contribute to
+                    better flood management when combined with other
+                    preventive measures.
+                </p>
+
+                <!-- Expert Profile -->
+                <div class="expert-profile d-flex align-items-center gap-3 mt-4 pt-4">
+
+                    <div class="expert-avatar">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+
+                    <div>
+                        <h5 class="mb-1">Thin Thin Khaing</h5>
+                        <p class="mb-1">Urban Flooding and Community Response</p>
+                        <span>University of Yangon</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: DESIGN CONSIDERATIONS -->
+            <div class="col-lg-5 expert-right p-4 p-md-5">
+
+                <span class="review-label">02 / DESIGN CONSIDERATIONS</span>
+
+                <h4 class="review-heading mt-3 mb-4">
+                    What makes the solution effective?
+                </h4>
+
+                <!-- Item 1 -->
+                <div class="review-item d-flex align-items-center gap-3 py-3">
+
+                    <div class="review-icon">
+                        <i class="bi bi-rulers"></i>
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <h5>Proper Design</h5>
+                        <p>The tunnel must be carefully engineered.</p>
+                    </div>
+
+                    <span class="review-number">01</span>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="review-item d-flex align-items-center gap-3 py-3">
+
+                    <div class="review-icon">
+                        <i class="bi bi-water"></i>
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <h5>Sufficient Capacity</h5>
+                        <p>It must handle the required water volume.</p>
+                    </div>
+
+                    <span class="review-number">02</span>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="review-item d-flex align-items-center gap-3 py-3">
+
+                    <div class="review-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <h5>Suitable Location</h5>
+                        <p>Construction locations must be appropriate.</p>
+                    </div>
+
+                    <span class="review-number">03</span>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="review-item d-flex align-items-center gap-3 py-3">
+
+                    <div class="review-icon">
+                        <i class="bi bi-tools"></i>
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <h5>Regular Maintenance</h5>
+                        <p>Continuous inspection is necessary.</p>
+                    </div>
+
+                    <span class="review-number">04</span>
+                </div>
+
+                <!-- Conclusion -->
+                <div class="expert-conclusion d-flex gap-3 align-items-start mt-4 p-3 rounded-3">
+                    <i class="bi bi-lightbulb-fill"></i>
+
+                    <p class="mb-0">
+                        Flood management works best when engineering
+                        solutions are combined with other preventive measures.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <!-- Logo and group name -->
+                <div class="col-12 col-md-5">
+                    <div class="footer-brand">
+                        <div class="brand-heading">
+                            <img src="../images/current4-logo.png" alt="Current 4 Logo" class="footer-logo">
+
+                            <h3>Current <span>4</span></h3>
+                        </div>
+
+                        <p class="footer-slogan">
+                            Awareness today, a safer tomorrow.
+                        </p>
+                        <p class="footer-description">
+                            Working towards a safer, flood-resilient Taungoo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social media icons -->
+                <div class="col-12 col-md-4">
+                    <div class="footer-social">
+                        <h5>Connect With Us</h5>
+
+                        <div class="social-icons">
+
+                            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+
+                            <a href="https://www.tiktok.com/" aria-label="TikTok" target="_blank">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+
+                        </div>
+
+                        <p class="social-caption">
+                            Follow our journey and spread awareness.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick links -->
+                <div class="col-12 col-md-3">
+                    <div class="footer-links">
+                        <h5>Explore</h5>
+                        <a href="../index.html">Home</a>
+                        <a href="About us.html">About Us</a>
+                        <a href="Safety_Tips.html">Safety Tips</a>
+                        <a href="Before&During.html">Before & During</a>
+                        <a href="Solution.html">UD Tunnel</a>
+                        <a href="History.html">History</a>
+                        <a href="Effects.html">Effects of Flooding</a>
+                        <a href="Signin.html">Sign In</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>© 2026 Copyright Current 4. All rights reserved.</p>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap JavaScript bundle (same version as Bootstrap CSS) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

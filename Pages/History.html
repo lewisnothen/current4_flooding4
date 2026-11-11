@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current 4 | Histroy</title>
+
+    <link rel="icon" type="image/x-icon" href="../Images/Current 4 logo with bg .png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Current 4 custom CSS (load after Bootstrap) -->
+    <link rel="stylesheet" href="external.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../Images/Current 4 logo with bg .png">
+
+    <!-- AOS CSS and JavaScript -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top">
+
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="brand" href="../index.html">
+                <img src="../Images/current4-logo.png" alt="Current 4 logo">
+                <span>Current 4</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="desktop-menu">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link ">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="About us.html" class="nav-link ">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Safety_Tips.html" class="nav-link ">Safety Tips</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Before&During.html" class="nav-link">Before & During</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Solution.html" class="nav-link">UD Tunnel</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+
+                            <li>
+                                <a class="dropdown-item nav-link active" href="History.html">
+                                    History
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link" href="Effects.html">
+                                    Effects of Flooding
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link" href="Signin.html">
+                                    Sign In
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Mobile Offcanvas Button -->
+            <button class="btn mobile-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu" aria-label="Open navigation menu">
+                <i class="bi bi-list" style="font-size: 28px; color: #176b91;"></i>
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+
+        <!-- Sidebar Header -->
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title" id="mobileMenuLabel">
+                <img src="../Images/current4-logo.png" width="35" alt="Logo">
+                Current 4
+            </h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+        </div>
+
+        <!-- Sidebar Links -->
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link ">
+                        <i class="bi bi-house-door me-2"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About us.html" class="nav-link">
+                        <i class="bi bi-people me-2"></i> About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Safety_Tips.html" class="nav-link">
+                        <i class="bi bi-shield-check me-2"></i> Safety Tips
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Before&During.html" class="nav-link">
+                        <i class="bi bi-cloud-rain me-2"></i> Before & During
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Solution.html" class="nav-link">
+                        <i class="bi bi-water me-2"></i> UD Tunnel
+                    </a>
+                </li>
+
+                <hr>
+
+                <li class="nav-item">
+                    <a href="History.html" class="nav-link active">
+                        <i class="bi bi-clock-history me-2"></i> History
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Effects.html" class="nav-link">
+                        <i class="bi bi-question-circle me-2"></i>Effects of Flooding
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Signin.html" class="nav-link">
+                        <i class="bi bi-person me-2"></i> Sign In
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <header class="history-hero">
+        <div class="container">
+            <span class="badge rounded-pill mb-3">CURRENT 4 · TAUNGOO</span>
+            <h1>The History of<br>Flooding in Taungoo</h1>
+            <p class="mt-3">Past floods show how heavy rainfall and rising river levels can affect homes, roads, farms,
+                and
+                families. Looking back helps our community understand the risk and prepare for the future.</p>
+            <a href="#timeline" class="btn btn-primary btn-md fw-bold mt-2 exp_time">Explore the timeline <i
+                    class="fa-solid fa-arrow-down ms-1"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <p class="history-kicker text-primary  mb-2">Why history matters</p>
+                    <h2 class="history-section-title mb-3">Flooding is a recurring risk</h2>
+                    <p>Taungoo and nearby communities have experienced flooding during periods of heavy rain and rising
+                        water in
+                        the Sittaung River. Low-lying areas and villages near the river can be especially vulnerable
+                        when water
+                        levels rise quickly.</p>
+                    <p>Reports from 2024 and 2025 document serious impacts. These events are evidence that flood
+                        preparedness,
+                        timely warnings, and effective water management matter—not proof that every flood has the same
+                        cause or
+                        severity.</p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded-4 shadow img_flood" src="../Images/flood_history.jpg"
+                        alt="Floodwater covering a road during a flood">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" style="background:#eaf7ff" id="timeline">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="history-section-title">Important Flood Events</h2>
+                    <p class="text-secondary">
+                        Three important flood events in Taungoo.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- First Card -->
+                    <div class="col-md-4">
+                        <div class="flood-card">
+                            <span class="flood-date">August 2024</span>
+                            <img src="" alt="">
+                            <h3 class="h5">Flooding Across Taungoo</h3>
+
+                            <p>
+                                Heavy rainfall and rising Sittaung River levels
+                                caused flooding in Taungoo and nearby villages.
+                                About 5,000 people were affected.
+                            </p>
+
+                            <a href="https://elevenmyanmar.com/news/over-5000-affected-by-severe-flooding-in-taungoo-and-surrounding-villages%22"
+                                target="_blank">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Second Card -->
+                    <div class="col-md-4">
+                        <div class="flood-card">
+                            <span class="flood-date">September 2024</span>
+                            <img src="" alt="">
+                            <h3 class="h5">Severe September Floods</h3>
+
+                            <p>
+                                Heavy rainfall associated with Typhoon Yagi
+                                contributed to widespread flooding. The river
+                                rose 72 cm within six hours on 13 September.
+                            </p>
+
+                            <a href="https://myanmar.un.org/en/278804-myanmar-flood-situation-report-16-september-2024"
+                                target="_blank">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Third Card -->
+                    <div class="col-md-4">
+                        <div class="flood-card">
+                            <span class="flood-date">July 2025</span>
+                            <img src="" alt="">
+                            <h3 class="h5">River Exceeded Danger Level</h3>
+
+                            <p>
+                                On 28 July 2025, the Sittaung River reached
+                                634 cm, exceeding its reported danger level
+                                of 600 cm by 34 cm.
+                            </p>
+
+                            <a href="https://elevenmyanmar.com/news/flooding-hits-taungoo-as-water-level-of-sittaung-river-rises-above-danger-level%22"
+                                target="_blank">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <br>
+
+
+
+        <section class="container pb-4 my-4">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="stat-box">
+                        <div class="stat-number">23 + 38</div>
+                        <h3 class="h5 fw-bold mt-3">Wards and village tracts</h3>
+                        <p class="mb-0">The study describes Taungoo Township as including 23 urban wards and 38 village
+                            tracts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-box">
+                        <div class="stat-number">Riverside Areas</div>
+                        <h3 class="h5 fw-bold mt-3">Regularly flooded areas</h3>
+                        <p class="mb-0">The study identifies these wards as areas that are regularly flooded.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-box">
+                        <div class="stat-number">14</div>
+                        <h3 class="h5 fw-bold mt-3">Key-person interviews</h3>
+                        <p class="mb-0">Researchers interviewed 14 people, including civil society groups, monks, flood
+                            victims,
+                            business owners, and government staff.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="text-center mb-4">
+                <h2 class="history-section-title">What the 2024 River-Level Graphs Show</h2>
+                <p class="text-secondary mx-auto pb-5" style="max-width:760px">
+                    The study <em>Urban Flood and Community Response in Taungoo, Myanmar</em> by Aung Kyaw and Thin Thin
+                    Khaing
+                    (presented 20 December 2025) includes river-level records from the Department of Meteorology and
+                    Hydrology
+                    (DMH), Taungoo.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm rounded-5 overflow-hidden mb-4 card-flood">
+                        <img src="../Images/Flood pattern.png" class="img-fluid"
+                            alt="Graph from the Taungoo flood study showing Sittaung River water levels from August to November 2024">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold text-primary">Sittaung River flood pattern, August–November 2024</h3>
+                            <p class="mb-2 text-dark pb-1">The study's graph marks a critical water-level line and
+                                reports that the
+                                river rose above 600
+                                cm five times during the four-month period.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4 card-flood">
+                        <img src="../Images/Rapid rise.png" class="img-fluid"
+                            alt="Graph from the Taungoo flood study showing Sittaung River water levels from 11 to 27 September 2024">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold text-primary">Rapid rise in September 2024</h3>
+                            <p class="mb-2 text-dark">For 11–27 September 2024, the study reports 17 days above its
+                                critical water
+                                level. It also
+                                highlights a 72 cm rise within six hours on 13 September, illustrating how quickly
+                                conditions can change.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <div class="card border-0 shadow-sm rounded-4 d-flex justify-content-center overflow-hidden flood_distri">
+            <img class="img_distri" src="../Images/Flood distribution.png"
+                alt="Map from the Taungoo flood study showing the distribution of flood-affected areas on 14 September 2024">
+            <div class="card-body p-4">
+                <h3 class="h5 fw-bold text-primary">Flood distribution in Taungoo, 14 September 2024</h3>
+                <p class="mb-2 text-dark ">The study's flood map, based on terrain data and field survey, indicates
+                    flooding
+                    across much
+                    of the urban area. The authors note that the mapped distribution includes some errors, so it
+                    should be read
+                    as a study map rather than a perfect boundary of every flooded location.</p>
+                <p class="small text-secondary mb-0">Source: Aung Kyaw &amp; Thin Thin Khaing, Annual Alumni Meeting on
+                    "Strengthening Resilience to Earthquakes and Climate
+                    Hazards: A Pathway to Sustainable Future”</p>
+            </div>
+        </div>
+
+
+
+        <section class="container py-5">
+            <div class="text-center mb-4">
+                <p class="history-kicker text-primary mb-2">What the reports show</p>
+                <h2 class="history-section-title">The impact on communities</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="stat-box">
+                        <div class="stat-number">~5,000</div>
+                        <h3 class="h5 fw-bold mt-3">People affected</h3>
+                        <p class="mb-0">An estimate for the August 2024 flooding in Taungoo and nearby villages,
+                            reported by Eleven
+                            Media Group.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-box">
+                        <div class="stat-number">30+</div>
+                        <h3 class="h5 fw-bold mt-3">Villages flooded</h3>
+                        <p class="mb-0">A September 2024 report described more than 30 villages in Taungoo Township as
+                            affected by
+                            flooding.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-box">
+                        <div class="stat-number">634 cm</div>
+                        <h3 class="h5 fw-bold mt-3">River level reported</h3>
+                        <p class="mb-0">The Sittaung River level at Taungoo on 28 July 2025, reported as 34 cm above the
+                            600 cm
+                            danger level.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="small text-secondary mt-3">Note: These are event-specific reported figures, not current conditions
+                or a
+                complete record of every flood in Taungoo.</p>
+        </section>
+
+        <section class="container pb-5">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmiSqBiHWZ9SaOYLUHs8e3ZeXxGnW81g5id4OBd6yfAwhaho6a4XGOBmI&s=10"
+                            class="card-img-top" alt="Rain falling in a forest, illustrating heavy rainfall"
+                            style="height:220px;object-fit:cover">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold text-primary">Patterns behind the risk</h3>
+                            <p class="mb-0 text-dark">The reports connect Taungoo flooding with heavy and continuous
+                                rainfall and
+                                rising river
+                                levels. Local terrain, drainage capacity, and the location of homes can also affect how
+                                communities
+                                experience floodwater.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm rounded-4 h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lXrWd9gOd8Zn5S0bSabKFoHmW3hj2F_MSCOyi3HhB34M7RvfIJkR70ko&s=10"
+                            class="card-img-top" alt="People walking outdoors, illustrating community preparedness"
+                            style="height:220px;object-fit:cover">
+                        <div class="card-body p-4">
+                            <h3 class="h5 fw-bold text-primary">What we can learn</h3>
+                            <p class="mb-0 text-dark">Past events underline the importance of listening to official
+                                warnings,
+                                preparing
+                                evacuation plans, protecting clean drinking water, and improving flood-risk awareness.
+                                Our proposed
+                                underground discharge tunnel is a school project concept and would need professional
+                                study before any
+                                real construction.</p>
+                            <a href="Solution.html" class="btn btn-outline-primary rounded-pill mt-3">Explore our
+                                solution</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <!-- Logo and group name -->
+                <div class="col-12 col-md-5">
+                    <div class="footer-brand">
+                        <div class="brand-heading">
+                            <img src="../images/current4-logo.png" alt="Current 4 Logo" class="footer-logo">
+
+                            <h3>Current <span>4</span></h3>
+                        </div>
+
+                        <p class="footer-slogan">
+                            Awareness today, a safer tomorrow.
+                        </p>
+                        <p class="footer-description">
+                            Working towards a safer, flood-resilient Taungoo.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Social media icons -->
+                <div class="col-12 col-md-4">
+                    <div class="footer-social">
+                        <h5>Connect With Us</h5>
+
+                        <div class="social-icons">
+
+                            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+
+                            <a href="https://www.tiktok.com/" aria-label="TikTok" target="_blank">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+
+                            <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+
+                        </div>
+
+                        <p class="social-caption">
+                            Follow our journey and spread awareness.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick links -->
+                <div class="col-12 col-md-3">
+                    <div class="footer-links">
+                        <h5>Explore</h5>
+                        <a href="../index.html">Home</a>
+                        <a href="About us.html">About Us</a>
+                        <a href="Safety_Tips.html">Safety Tips</a>
+                        <a href="Before&During.html">Before & During</a>
+                        <a href="Solution.html">UD Tunnel</a>
+                        <a href="History.html">History</a>
+                        <a href="Effects.html">Effects of Flooding</a>
+                        <a href="Signin.html">Sign In</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>© 2026 Copyright Current 4. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JavaScript bundle (same version as Bootstrap CSS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

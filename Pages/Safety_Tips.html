@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current 4 | Safety_Tips </title>
+
+  <link rel="icon" type="image/x-icon" href="../Images/Current 4 logo with bg .png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Current 4 custom CSS (load after Bootstrap) -->
+  <link rel="stylesheet" href="safety.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../Images/Current 4 logo with bg .png">
+
+  <!-- AOS CSS and JavaScript -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar fixed-top">
+
+    <div class="container-fluid">
+
+      <!-- Brand -->
+      <a class="brand" href="../index.html">
+        <img src="../Images/current4-logo.png" alt="Current 4 logo">
+        <span>Current 4</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="desktop-menu">
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link ">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="About us.html" class="nav-link">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Safety_Tips.html" class="nav-link active">Safety Tips</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Before&During.html" class="nav-link">Before & During</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Solution.html" class="nav-link">UD Tunnel</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+
+              <li>
+                <a class="dropdown-item nav-link" href="History.html">
+                  History
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item nav-link" href="Effects.html">
+                  Effects of Flooding
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item nav-link" href="Signin.html">
+                  Sign In
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Mobile Offcanvas Button -->
+      <button class="btn mobile-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+        aria-controls="mobileMenu" aria-label="Open navigation menu">
+        <i class="bi bi-list" style="font-size: 28px; color: #176b91;"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+
+    <!-- Sidebar Header -->
+    <div class="offcanvas-header">
+
+      <h5 class="offcanvas-title" id="mobileMenuLabel">
+        <img src="../Images/current4-logo.png" width="35" alt="Logo">
+        Current 4
+      </h5>
+
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+    </div>
+
+    <!-- Sidebar Links -->
+    <div class="offcanvas-body">
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link ">
+            <i class="bi bi-house-door me-2"></i> Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="About us.html" class="nav-link ">
+            <i class="bi bi-people me-2"></i> About Us
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="Safety_Tips.html" class="nav-link active">
+            <i class="bi bi-shield-check me-2"></i> Safety Tips
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="Before&During.html" class="nav-link">
+            <i class="bi bi-cloud-rain me-2"></i> Before & During
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="Solution.html" class="nav-link">
+            <i class="bi bi-water me-2"></i> UD Tunnel
+          </a>
+        </li>
+
+        <hr>
+
+        <li class="nav-item">
+          <a href="History.html" class="nav-link">
+            <i class="bi bi-clock-history me-2"></i> History
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="Effects.html" class="nav-link">
+            <i class="bi bi-question-circle me-2"></i> Effects of Flooding
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="Signin.html" class="nav-link">
+            <i class="bi bi-person me-2"></i> Sign In
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <main class="container py-5 mt-5">
+
+    <!-- CAROUSEL -->
+    <section class="mb-5">
+      <h2 class="section-title mb-3">Flood Safety Highlights</h2>
+
+      <div id="safetyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#safetyCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#safetyCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#safetyCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner rounded-4 shadow">
+
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=1200&q=80"
+              class="d-block w-100" alt="Floodwater covering a road">
+
+            <div class="carousel-caption">
+              <span class="badge text-bg-warning">BE PREPARED</span>
+              <h5>Prepare Before the Water Rises</h5>
+              <p>Pack emergency supplies and plan your evacuation route.</p>
+              <a href="#safety-guide" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=1200&q=80"
+              class="d-block w-100" alt="Heavy rainfall">
+
+            <div class="carousel-caption">
+              <span class="badge text-bg-warning">STAY ALERT</span>
+              <h5>Recognise the Warning Signs</h5>
+              <p>Monitor heavy rain, rising rivers, and official announcements.</p>
+              <a href="#safety-guide" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&q=80"
+              class="d-block w-100" alt="Clean drinking water">
+
+            <div class="carousel-caption">
+              <span class="badge text-bg-danger">STAY SAFE</span>
+              <h5>Protect Your Family</h5>
+              <p>Avoid floodwater and follow official evacuation instructions.</p>
+              <a href="#checklist" class="btn btn-primary">View Checklist</a>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#safetyCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#safetyCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TAB PANE SAFETY GUIDE -->
+    <section class="mb-5" id="safety-guide">
+      <h2 class="section-title">Your Flood Safety Guide</h2>
+
+      <p class="text-secondary my-4">
+        Select a tab to explore the safety advice for each situation.
+      </p>
+
+      <ul class="nav nav-tabs nav-fill mb-4" id="safetyTabs" role="tablist">
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="before-tab" data-bs-toggle="tab" data-bs-target="#before" type="button"
+            role="tab">
+            Before a Flood
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="warning-tab" data-bs-toggle="tab" data-bs-target="#warning" type="button"
+            role="tab">
+            Warning Signs
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="during-tab" data-bs-toggle="tab" data-bs-target="#during" type="button"
+            role="tab">
+            During a Flood
+          </button>
+        </li>
+
+      </ul>
+
+      <div class="tab-content">
+
+        <!-- BEFORE TAB -->
+        <div class="tab-pane fade show active" id="before" role="tabpanel">
+
+          <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=700&q=80"
+                  alt="Emergency first aid supplies">
+                <div class="card-body">
+                  <span class="badge text-bg-primary mb-2">Essential</span>
+                  <h5>Emergency Kit</h5>
+                  <p class="text-dark">Prepare water, food, medicines, a flashlight, batteries, and a power bank.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_5UeEx0qHVsKuiQCj-8EfKn0mcmIwegHBSJZ98AzwoAr_SQLPfBmklay_&s=10"
+                  alt="News and information">
+                <div class="card-body">
+                  <span class="badge text-bg-info mb-2">Stay Informed</span>
+                  <h5>Follow Weather Reports</h5>
+                  <p class="text-dark">Check official weather forecasts and river-level updates regularly.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://images.unsplash.com/photo-1524666041070-9d87656c25bb?auto=format&fit=crop&w=700&q=80"
+                  alt="Map for planning routes">
+                <div class="card-body">
+                  <span class="badge text-bg-primary mb-2">Plan Ahead</span>
+                  <h5>Plan an Evacuation Route</h5>
+                  <p class="text-dark">Identify higher ground and safe shelters before flooding begins.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cFYalMCgIaXgv41n2jfeWJffw7jMCi8YAU5wfmQH52gLzwW-40z9mdfK&s=10"
+                  alt="Personal belongings">
+                <div class="card-body">
+                  <span class="badge text-bg-primary mb-2">Protection</span>
+                  <h5>Protect Documents</h5>
+                  <p class="text-dark">Keep important certificates and identification in waterproof bags.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMUCLuPdaje5rEvWgOTT5XxV_1Fbm9QLs8G3LXcUfGB69P6ImUjq6-eU&s=10"
+                  alt="Home interior">
+                <div class="card-body">
+                  <span class="badge text-bg-primary mb-2">Home Safety</span>
+                  <h5>Prepare Your Home</h5>
+                  <p class="text-dark">Move valuables and electronics to higher places and secure outdoor items.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_bvebj1g3Px7ft5bgZdkmq-PwVUaSI-dvjxxCnSpx2aBYgU4jfJJDMNU&s=10"
+                  alt="Family spending time together">
+                <div class="card-body">
+                  <span class="badge text-bg-primary mb-2">Family Safety</span>
+                  <h5>Make a Family Plan</h5>
+                  <p class="text-dark">Choose a meeting point and share emergency contact numbers.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- WARNING TAB -->
+        <div class="tab-pane fade" id="warning" role="tabpanel">
+
+          <div class="row g-4">
+
+            <div class="col-md-6">
+              <div class="card tip-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8VLCiVXi0u-5FyrJHiWGB96epYK9DsbQ_dPmqNMt7WBYkBred133nNY&s=10"
+                  alt="Flooded road">
+                <div class="card-body">
+                  <span class="badge text-bg-danger mb-2">High Risk</span>
+                  <h5>Rising River Levels</h5>
+                  <p class="text-dark">Water rising quickly or spreading beyond riverbanks can indicate increasing flood
+                    danger.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card tip-card">
+                <img src="https://media.thevibes.com/images/uploads/covers/_large/11112022_-_Gambar_Hujan_Kuala_Sepetang_heavy_rain-_Alif_Omar.JPG"
+                  alt="Heavy rain">
+                <div class="card-body">
+                  <span class="badge text-bg-warning mb-2">Warning</span>
+                  <h5>Continuous Heavy Rain</h5>
+                  <p class="text-dark">Heavy rainfall can overwhelm drainage systems and raise river levels.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card tip-card">
+                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=700&q=80"
+                  alt="Public announcement equipment">
+                <div class="card-body">
+                  <span class="badge text-bg-danger mb-2">Take Action</span>
+                  <h5>Official Evacuation Advice</h5>
+                  <p class="text-dark">Leave promptly when authorities advise your area to evacuate.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card tip-card">
+                <img src="https://www.theplumbette.com.au/wp-content/uploads/2013/02/flooded-stormwater-drain.jpg"
+                  alt="Floodwater covering a road">
+                <div class="card-body">
+                  <span class="badge text-bg-danger mb-2">Danger</span>
+                  <h5>Overflowing Roads and Drains</h5>
+                  <p class="text-dark">Avoid low-lying roads, underpasses, and overflowing drains.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- DURING TAB -->
+        <div class="tab-pane fade" id="during" role="tabpanel">
+
+          <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://i.ucanews.com/ucanews/uploads/2023/08/check-afp-five-dead-40-000-evacuated-as-monsoon-floods-hit-myanmar-64d70e542620e_600.jpeg"
+                  alt="Elevated landscape">
+                <div class="card-body">
+                  <h5>Move to Higher Ground</h5>
+                  <p class="text-dark">Follow evacuation advice and reach a safe elevated location.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://www.fasttrackurgentcare.com/wp-content/uploads/2024/10/The-Dangers-Of-Wading-In-Flood-Waters-Why-Its-More-Than-Just-Water.jpg"
+                  alt="Floodwater on a road">
+                <div class="card-body">
+                  <h5>Never Enter Floodwater</h5>
+                  <p class="text-dark">Do not walk, swim, or drive through floodwater. Hidden currents and debris can be
+                    deadly.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://i0.wp.com/safetymanagementgroup.com/wp-content/uploads/2026/02/Untitled-Blog-Banner-2.png?resize=1080%2C675&quality=80&ssl=1"
+                  alt="Electrical equipment">
+                <div class="card-body">
+                  <h5>Avoid Electrical Hazards</h5>
+                  <p class="text-dark">Stay away from fallen power lines and electrical equipment exposed to water.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=700&q=80"
+                  alt="Drinking water">
+                <div class="card-body">
+                  <h5>Keep Water Safe</h5>
+                  <p class="text-dark">Use bottled or properly treated water for drinking and cooking.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8JywThZhq564bvBrHUcJ1y8QI1-SO7CUKmo9xIuVhnz8k7bf6MwfExQg&s=10"
+                  alt="Family together">
+                <div class="card-body">
+                  <h5>Protect Vulnerable People</h5>
+                  <p class="text-dark">Help children, older adults, and people with disabilities evacuate safely.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card tip-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80"
+                  alt="Person using a phone">
+                <div class="card-body">
+                  <h5>Stay Informed</h5>
+                  <p class="text-dark">Listen to official announcements and conserve phone battery power.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section class="mb-5">
+      <h2 class="section-title mb-5">Emergency Questions</h2>
+
+      <div class="accordion" id="emergencyAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header bg-light">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#answer1">
+              What should I do if floodwater enters my home?
+            </button>
+          </h2>
+          <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#emergencyAccordion">
+            <div class="accordion-body text-dark">
+              Follow evacuation instructions and move to a safe elevated place.
+              Avoid electrical equipment and never walk through fast-moving water.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header bg-light">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#answer2">
+              Is it safe to walk through shallow floodwater?
+            </button>
+          </h2>
+          <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#emergencyAccordion">
+            <div class="accordion-body text-dark">
+              No. Even shallow water can hide holes, sharp objects, contamination,
+              and electrical hazards. Avoid entering floodwater.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header bg-light">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#answer3">
+              What should I do after a flood?
+            </button>
+          </h2>
+          <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#emergencyAccordion">
+            <div class="accordion-body text-dark">
+              Return only when authorities say it is safe. Avoid damaged buildings,
+              contaminated water, and electrical hazards. Clean and disinfect
+              affected belongings safely.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHECKLIST -->
+    <section class="mb-5" id="checklist">
+      <h2 class="section-title">Family Emergency Checklist</h2>
+      <p class="text-secondary">
+        Tick the items your family has already prepared.
+      </p>
+
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="checklist">
+            <h4>Emergency Supplies</h4>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="item1">
+              <label class="form-check-label" for="item1">Drinking water and food</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="item2">
+              <label class="form-check-label" for="item2">First-aid kit and medicines</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="item3">
+              <label class="form-check-label" for="item3">Flashlight and spare batteries</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="item4">
+              <label class="form-check-label" for="item4">Charged phone and power bank</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="item5">
+              <label class="form-check-label" for="item5">Waterproof document bags</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="prepare-box">
+            <h4>Preparedness Progress</h4>
+
+            <p class="text-secondary">
+              Use the checklist to review your family's preparation.
+            </p>
+
+            <div class="alert alert-info mb-0">
+              Regularly check your emergency supplies, keep important documents in waterproof storage, and ensure your
+              family knows the nearest evacuation routes and safe locations.
+              Stay informed through local weather updates and flood warnings to ensure everyone is prepared before
+              flooding occurs.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WARNING ALERT -->
+    <div class="alert alert-warning shadow-sm " role="alert">
+      <h4 class="alert-heading">Important Flood Warning</h4>
+      Never stand on a bridge to watch rising water or enter a river to rescue belongings.
+      If someone is in danger, contact trained rescuers and seek help from a safe location.
+    </div>
+
+
+
+  </main>
+
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+
+        <!-- Logo and group name -->
+        <div class="col-12 col-md-5">
+          <div class="footer-brand">
+            <div class="brand-heading">
+              <img src="../images/current4-logo.png" alt="Current 4 Logo" class="footer-logo">
+
+              <h3>Current <span>4</span></h3>
+            </div>
+
+            <p class="footer-slogan">
+              Awareness today, a safer tomorrow.
+            </p>
+            <p class="footer-description">
+              Working towards a safer, flood-resilient Taungoo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Social media icons -->
+        <div class="col-12 col-md-4">
+          <div class="footer-social">
+            <h5>Connect With Us</h5>
+
+            <div class="social-icons">
+
+              <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="https://www.tiktok.com/" aria-label="TikTok" target="_blank">
+                <i class="bi bi-tiktok"></i>
+              </a>
+
+              <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank">
+                <i class="bi bi-youtube"></i>
+              </a>
+
+            </div>
+
+            <p class="social-caption">
+              Follow our journey and spread awareness.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-12 col-md-3">
+          <div class="footer-links">
+            <h5>Explore</h5>
+            <a href="../index.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Safety_Tips.html">Safety Tips</a>
+            <a href="Before&During.html">Before & During</a>
+            <a href="Solution.html">UD Tunnel</a>
+            <a href="History.html">History</a>
+            <a href="Effects.html">Effects of Flooding</a>
+            <a href="Signin.html">Sign In</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>© 2026 Copyright Current 4. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JavaScript bundle (same version as Bootstrap CSS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
